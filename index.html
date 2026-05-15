@@ -1,12 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My first page lasttmy last page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super HTML Page</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#0077ff;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#222;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-size:18px;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        .hero{
+            height:300px;
+            background:linear-gradient(to right,#0077ff,#00c6ff);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            text-align:center;
+            flex-direction:column;
+        }
+
+        .hero h1{
+            font-size:50px;
+        }
+
+        .hero p{
+            margin-top:10px;
+            font-size:20px;
+        }
+
+        .btn{
+            margin-top:20px;
+            padding:12px 25px;
+            background:white;
+            color:#0077ff;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:18px;
+        }
+
+        .btn:hover{
+            background:yellow;
+            color:black;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            padding:40px 0;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 4px 8px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.05);
+        }
+
+        .card h3{
+            margin-bottom:10px;
+            color:#0077ff;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Hello, World!</h1>
-    <p>welcome to the devops.</p>
+    <header>
+        <h1>Welcome to My Super HTML Page</h1>
+        <p>Simple | Stylish | Responsive</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Beautiful Web Design</h1>
+        <p>Create amazing websites using HTML & CSS</p>
+        <button class="btn">Get Started</button>
+    </section>
+
+    <div class="container">
+
+        <h2 style="text-align:center; margin-bottom:30px;">
+            Our Features
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Fast</h3>
+                <p>Quick loading and responsive website design.</p>
+            </div>
+
+            <div class="card">
+                <h3>Modern</h3>
+                <p>Stylish UI with attractive colors and layout.</p>
+            </div>
+
+            <div class="card">
+                <h3>Responsive</h3>
+                <p>Works perfectly on mobile, tablet, and desktop.</p>
+            </div>
+
+            <div class="card">
+                <h3>Easy</h3>
+                <p>Simple code structure for beginners to learn.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Super HTML Page | Designed using HTML & CSS</p>
+    </footer>
 
 </body>
 </html>
